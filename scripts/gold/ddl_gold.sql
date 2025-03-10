@@ -122,7 +122,7 @@ SELECT
 		pc.cat category,
 		pc.subcat subcategory,
 		pc.maintenance,
-		prd_cost product_cost,
+		prd_cost cost,
 		pn.prd_line product_line,
 		pn.prd_start_dt start_date
 	FROM silver.crm_prd_info pn
@@ -144,7 +144,7 @@ cu.customer_key,
 sd.sls_order_dt order_date,
 sd.sls_ship_dt ship_date,
 sd.sls_due_dt due_date,
-sd.sls_sales sales,
+sd.sls_sales sales_amount,
 sd.sls_quantity quantity,
 sd.sls_price price
 FROM silver.crm_sales_details sd
